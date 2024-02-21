@@ -4,3 +4,6 @@ language = "en"
 multilingual = false
 src = "src"
 title = "Rust from C/C++"
+
+[rust]
+edition = "2021"

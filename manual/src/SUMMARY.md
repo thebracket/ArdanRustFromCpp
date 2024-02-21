@@ -16,33 +16,34 @@
     - [Strings](./rust_tour_strings.md)
     - [Functions and Scopes](./rust_tour_fn_scope.md)
     - [Structures](./rust_tour_struct.md)
-    Associated Functions
+    - [Structure Functions](./rust_tour_struct_fn.md)
+    - [Destructors - Drop](./rust_tour_drop.md)
     - [Tuples and Destructuring](./rust_tour_tuples.md)
     - [Enums](./rust_tour_enums.md)
-    Containers
-    Iterators
-    Destructors - Drop
-    Move by Default
-    Borrowing
-    Memory Management
-        C-style allocation and deallocation
-        Box - Unique Pointer
-        Arc - Shared Pointer
-        The Borrow Checker
-    Concurrency
-        Threads and Scoped Threads
-        Rayon
-        Fearless Concurrency
-    Organizing Code into Modules and Crates
-    Traits
-    Generics
-    Constants
-- Touring the Rust Ecosystem
-    - Dependencies
-        - Serialization with Serde
-    - Unit Tests
-    - Benchmarking
-- Calling C from Rust with FFI
-- Calling C++ from Rust
-- Calling Rust from C
+    - [Containers](./rust_tour_containers.md)
+    - [Iterators](./rust_tour_iterators.md)
+    - [Move by Default](./rust_tour_move_by_default.md)
+    - [Borrowing](./rust_tour_borrowing.md)
+    - [Slices](./rust_tour_slices.md)
+    - [Memory Management](./rust_tour_mem_intro.md)
+        - [C-style allocation and deallocation](./rust_tour_mem_c.md)
+        - [Box - Unique Pointer](./rust_tour_box.md)
+        - [Rc and Arc - Shared Pointer](./rust_tour_rc_arc.md)
+        - [The Borrow Checker](./rust_tour_borrow_checker.md)
+    - [Concurrency](./rust_tour_concurrency.md)
+        - [Data Race Protection](./rust_tour_data_race.md)
+        - [Spawning Threads](./rust_tour_spawn_threads.md)
+        - [Dividing Workloads](./rust_tour_threads_divide.md)
+        - [Scoped Threads](./rust_tour_scoped_threads.md)
+        - [Rayon](./rust_tour_rayon.md)
+    - [Program Organization](./rust_tour_org.md)
+    - [Traits](./rust_tour_traits.md)
+    - [Generics](./rust_tour_generics.md)
+    - [Error Handling](./rust_tour_errors.md)
+- [Touring the Rust Ecosystem](./ecosystem_intro.md)
+    - [Tool Equivalencies](./eco_tools.md)
+    - [Serialization with Serde](./eco_serialize.md)
+    - [Unit Tests](./unit_tests.md)
+    - [Benchmarking](./benchmarking.md)
+- [Calling C from Rust with FFI](./ffi.md)
 

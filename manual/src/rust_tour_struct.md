@@ -117,7 +117,7 @@ pub struct MyPublicStruct {
 
 ## Types of Structure
 
-A "Market Struct" (one you use to mark a type but that doesn't contain data) may be declared as:
+A "Marker Struct" (one you use to mark a type but that doesn't contain data) may be declared as:
 
 ```rust
 struct MyMarker;
@@ -133,6 +133,7 @@ struct Named {
 }
 
 let s = Named { my_field: 3 };
+println!("{}", s.my_field);
 ```
 
 And a tuple-structure:
@@ -141,7 +142,7 @@ And a tuple-structure:
 struct TupleStruct(i32);
 
 let s = TupleStruct(3);
-
+println!("{}", s.0)
 ```
 
 

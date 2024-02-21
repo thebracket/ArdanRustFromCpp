@@ -38,7 +38,13 @@ let o: u8 = n;
 
 Rust lets you specify the underlying type for numeric Enums:
 
-TODO
+```rust
+#[repr(u8)]
+enum Level {
+    Low = 1, Medium = 2, High = 3
+}
+let n = Level::Medium;
+```
 
 ## Enumerations Can Contain Data
 
@@ -99,5 +105,35 @@ if let Some(x) = my_option {
 
 ## Result
 
+`Result` is also an enumeration, indicating a fallible action. It's very similar to the new `std::expected` in C++. Rust's Results are:
+
+```rust
+enum Result<T, E> {
+    Ok(T)
+    Err(E)
+}
+```
+They are *generic* (just like options), effectively templated in C++ parlance. When an operation may fail, it returns either `Ok(good_value)` or `Err(error type)`. We'll talk a lot more about this in Error Handling.
+
 ## Enumerations can have Associated Functions, too
 
+You can use `impl` blocks with enumerations, too.
+
+```rust
+enum MyEnum { A, B }
+
+impl MyEnum {
+    fn new() -> Self { MyEnum::A } // A constructor
+    fn print_me(&self) {
+        match self {
+            MyEnum::A => println!("The first option!"),
+            MyEnum::B => println!("The second option!"),
+        }
+    }
+}
+
+fn main() {
+    let e = MyEnum::new();
+    e.print_me();
+}
+```
